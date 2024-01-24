@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #clockdiagram{
+       width:500px;
+       height: 500px;
+       border-radius: 50%;
+       border: 10px solid blueviolet; 
+       margin:2cm;
+       position:relative;
+    }
+    #point{
+        width:20px;
+        height: 20px;
+        background-color: black;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        position:absolute;
+        top:50%;
+        left:50%;
+    }
+    .hour{
+        position:absolute;
+        font-size:30px;
+        color:black;
+        font-weight: bold;
+    }
+    .hour-1{
+        top:40px;
+        right:110px;
+    }
+    .hour-2{
+        top:125px;
+        right:30px;
+    }
+    .hour-3{
+        top:235px;
+        right:5px;
+    }
+    .hour-4{
+        top:345px;
+        right:35px;
+    }
+    .hour-5{
+        top:430px;
+        right:115px;
+    }
+    .hour-6{
+        bottom:1px;
+        left:245px;
+    }
+    .hour-7{
+        top:430px;
+        left:110px;
+    }
+    .hour-8{
+        top:345px;
+        left:40px;
+    }
+    .hour-9{
+        top:235px;
+        left:5px;
+    }
+    .hour-10{
+        top:125px;
+        left:40px;
+    }
+    .hour-11{
+        top:40px;
+        left:110px;
+    }
+    .hour-12{
+        top:0px;
+        left:235px;
+    }
+    #handwrapper{
+        width:400px;
+        height: 400px;
+        /* background-color: cornsilk; */
+        position:absolute;
+        top:50px;
+        left:50px;
+        border-radius: 50%;
+    }
+    #secondshand{
+        width:4px;
+        height:200px;
+        background-color: black;
+        position: absolute;
+        left:198px;
+        transform-origin: bottom center;
+    }
+    #minuteshand{
+        width:4px;
+        height:175px;
+        background-color: blue;
+        position: absolute;
+        left:198px;
+        top:25px;
+        transform-origin: bottom center;
+    }
+    #hourshand{
+        width:4px;
+        height:150px;
+        background-color: red;
+        position: absolute;
+        left:198px;
+        top:50px;
+        transform-origin: bottom center;
+    }
+
+    </style>
+</head>
+<body>
+    <p>ClockProgram</p>
+    <div id="box1">
+    <div id="clockdiagram">
+    <div id="point"></div>
+   <div class="hour hour-1">1</div>
+   <div class="hour hour-2">2</div>
+   <div class="hour hour-3">3</div>
+   <div class="hour hour-4">4</div>
+   <div class="hour hour-5">5</div>
+   <div class="hour hour-6">6</div>
+   <div class="hour hour-7">7</div>
+   <div class="hour hour-8">8</div>
+   <div class="hour hour-9">9</div>
+   <div class="hour hour-10">10</div>
+   <div class="hour hour-11">11</div>
+   <div class="hour hour-12">12</div>
+   <div id="handwrapper">
+   <div id="minuteshand"></div>
+   <div id="secondshand"></div>
+   <div id="hourshand"></div>
+   <div></div>
+</div>
+    <script>function starttime(){
+        let date=new Date();
+        let hours=date.getHours();
+        let minutes=date.getMinutes();
+        let seconds=date.getSeconds();
+    
+        document.getElementById('hourshand').style.transform=`rotate(${(hours % 12) * 30 + (minutes / 2)}deg)`;
+        document.getElementById('minuteshand').style.transform=`rotate(${minutes * 6}deg)`;
+        document.getElementById('secondshand').style.transform="rotate("+seconds*6+"deg)"
+    
+        let ampm=hours>12?'pm':"am";
+        hours=hours%12||hours;
+        hours=format(hours)
+        minutes=format(minutes)
+        seconds=format(seconds)
+        console.log(`${hours}:${minutes}:${seconds} ${ampm}`);
+    }
+    function format(time){
+        time=time.toString();
+        return time.length<2?`0${time}`:`${time}`
+    }
+    let timer1=setInterval(starttime,1000);</script>  
+</body>
+</html>

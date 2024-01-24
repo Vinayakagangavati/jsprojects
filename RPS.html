@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="playerid">Player:</p>
+    <p id="computerid">Computer:</p>
+    <p id="resultid">Result:</p>
+    <button id="Rock" class="choice">Rock</button>
+    <button id="Paper" class="choice">Paper</button>
+    <button id="Scissors" class="choice">Scissors</button>
+    <script>
+      let player=document.getElementById("playerid");
+      let computer=document.getElementById("computerid");
+      let result=document.getElementById("resultid");
+      let choices=document.querySelectorAll(".choice");
+      let playerselected;
+      choices.forEach(print);
+      function print(value){
+        value.addEventListener("click",handleclick);
+      }
+      function handleclick(event){
+      playerselected=(event.target).id;
+      console.log(playerselected);
+      player.textContent=`Player:${playerselected}`;
+      randomn();
+      comparsion();
+      }
+      function randomn(){
+        let number=Math.floor(Math.random()*3+1);
+        switch(number){
+            case 1:computer.textContent=`Computer:Rock`;
+                    break;
+            case 2:computer.textContent=`Computer:Paper`;
+                    break;
+            case 3:computer.textContent=`Computer:Scissors`;
+                    break;
+        }
+      }
+      function comparsion(){
+        if(((player.textContent ==="Player:Rock")&&(computer.textContent ==="Computer:Rock"))||((player.textContent ==="Player:Paper")&&(computer.textContent ==="Computer:Paper"))||((player.textContent ==="Player:Scissors")&&(computer.textContent ==="Computer:Scissors"))){
+            result.textContent="Result:Draw! \u{1F610}";
+        }
+        else if(player.textContent === "Player:Rock"){
+            result.textContent = (computer.textContent === "Computer:Paper" ? "Result:You Lost! \u{1F622}" : "Result:You Won! \u{1F389}");
+        }
+        else if(player.textContent === "Player:Paper"){
+            result.textContent = (computer.textContent === "Computer:Scissors" ? "Result:You Lost! \u{1F622}" : "Result:You Won! \u{1F389}");
+        }
+        else if(player.textContent === "Player:Scissors"){
+            result.textContent = (computer.textContent === "Computer:Rock" ? "Result:You Lost! \u{1F622}" : "Result:You Won! \u{1F389}");
+        }
+    } 
+    </script>
+</body>
+</html>  

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 238, 47);
+        }
+        #container{
+            width:15cm;
+            height:7cm;
+            border:5px solid black;
+            margin:2cm 0 0 12cm;
+            border-radius:10px;
+            background-color: black;
+        }
+        #timedisplay{
+          color:white;
+          text-align: center;
+          font-size:100px;
+          padding-top:25px;
+        }
+        .items{
+            font-size: 15px;
+            border-radius: 20px;
+            width:2.5cm;
+            height: 1cm;
+            margin-right:30px;
+        } #items{
+            margin-left:3cm;
+            margin-top: 0.5cm;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="timedisplay">00:00:00</div>
+    <div id="items">
+    <button id="start" class="items">Start</button>
+    <button id="pause" class="items">Pause</button>
+    <button id="reset" class="items">Reset</button>
+    </div>
+    <script src="StopWatch.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Trirong"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("./25501.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Trirong";
+        font-size: larger;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+      }
+      #last,
+      #know,
+      #reset,
+      #details {
+        visibility: hidden;
+      }
+      #btn:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row my-5">
+        <button class="btn btn-outside-warning rounded offset-5 col-2" id="btn">
+          Get Location and Weather Deatils
+        </button>
+      </div>
+      <div class="row mt-5" id="details">
+        <div class="col text-center">
+          <p id="city">City :</p>
+          <p id="temp">Temperature :</p>
+          <p id="mxtemp">Maximum Temperature :</p>
+          <p id="mntemp">Minimum Temperature :</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center" id="know">
+          <a href="#">Know More...</a>
+        </div>
+      </div>
+      <div class="row mt-3" id="last" class="d-none">
+        <div class="col-2 offset-1 text-center">
+          <img src="./good-morning.png" width="70px" class="mt-3" />
+          <p>Sunrise Time</p>
+          <p id="Sunrise"></p>
+        </div>
+        <div class="col-2 text-center">
+          <img src="./summer.png" width="70px" class="mt-3" />
+          <p>Sunset Time</p>
+          <p id="Sunset"></p>
+        </div>
+        <div class="col-2 text-center">
+          <img src="./latitude.png" width="70px" class="mt-3" />
+          <p>Latitude</p>
+          <p id="lat"></p>
+        </div>
+        <div class="col-2 text-center">
+          <img src="./longitude.png" width="70px" class="mt-3" />
+          <p>Longitude</p>
+          <p id="long"></p>
+        </div>
+        <div class="col-2 text-center">
+          <img src="./weather-forecast.png" width="70px" class="mt-3" />
+          <p>Description</p>
+          <p id="desc"></p>
+        </div>
+      </div>
+      <div>
+        <div class="col-2 offset-5 btn btn-outside-danger mt-5" id="reset">
+          Reset
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>

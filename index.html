@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="web.css">
+    <style>
+#header{
+    color:white;
+    background-color: #0e0d0d;
+}
+#logo{
+    margin-top:5px;
+    font-size: 2rem;
+}
+#menu{
+    list-style:none;
+    margin-top:0.3cm;
+    padding:0px;
+}
+#menu li{
+    display:inline;
+}
+#menu li a{
+    text-decoration: none;
+    color:white;
+    margin:0.25cm;
+}
+#menu li a:hover{
+    color:white;
+    background-color: #c0392b;
+}
+#banner{
+    background-image: url('alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text{
+    text-align: justify;
+}
+.colone,.colthree,.coltwo{
+    margin:1px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.something::after{
+    background-color: #c0392b;
+    content: "";
+    display: block;
+    width:250px;
+    height:3px; 
+    margin:20px auto; 
+}
+.test{
+    /* height:400px;
+    padding-top:20px; */
+    width:100%;
+    background-image: url('/nicolas-thomas-PLDkBHbM3Hc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+.images{
+    border:1px solid black;
+}
+.pro{
+    position: relative;
+    bottom:20px;
+}
+.recentsnews::after{
+ background-color: #c0392b;
+ content: "";
+ width:250px;
+ height:3px;
+ display: block;
+ margin:20px auto;
+}
+.calender{
+    position: relative;
+    bottom:2px;
+    right:5px;
+}
+.newsimg{
+    text-align: center;
+}
+.read:hover{
+    font-size: bolder;
+    color:red;
+}
+.read{
+ color:white;
+ text-decoration: none;
+ position: relative;
+ bottom:15px;
+}
+.first{
+    font-size: 20px;
+}
+.first::after{
+    background-color: #c0392b;
+    content: "";
+    width:250px;
+    height:3px;
+    display: block;
+}
+.last{
+   background-color: #34495e;
+   color:white
+}
+#linkme{
+    color:rgb(0, 255, 128);
+    text-decoration: none;
+}
+#linkme:hover{
+    color:rgb(255, 0, 238);
+    text-decoration: underline;
+}
+.otherProjects{
+ background-color: #CECE5A;
+}
+.othernav{
+ width:100%;
+ display: flex;
+ justify-content: space-around;
+}
+.othernav li{
+ list-style: none;
+ display: inline;
+}
+.othernav li a{
+    text-decoration: none;
+    color:rgb(170, 23, 23);
+}
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 id="logo" class="text-md-start text-center" style="color:#C8AE7D;">ElevateSphere</h1>
+                </div>
+                <div class="col-md-8">
+                    <ul id="menu" class="float-md-end text-center">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner" style="height:300px;">
+        <div class="container">
+            <div class="row offset-sm-6" style="color:rgb(7, 5, 7)">
+                <h1 class="mt-5 text">Work Acheive Aspire</h1>
+                <p class="text"></p>
+            </div>
+        </div>
+    </div>
+    <div id="session">
+        <div class="session-container m-5">
+            <div class="row1 mt-5 text">
+                <p  class="something" style="font-size:30px;text-align: center; color:#EA1179">ElevateSphere Chronicles</p>
+            </div>
+            <div class="row">
+                <div class="col colone p-5" style="text-align: center; background-color: #FFD56F;">
+                    <div><img src="/anchor.png" width="100px;"></div><br>
+                    <b>InspireSphere</b>
+                    <p class="mt-4 text-justify">Unveiling Ongoing Inspirations - Explore the realm of ongoing projects, innovations, and stories that inspire both ElevateSphere and its community.</p>
+                </div>
+                <div class="col coltwo p-5" style="text-align: center; background-color: #F8F0E5;">
+                    <div><img src="/bar-chart.png" width="100px;"></div><br>
+                    <b>Ascend</b>
+                    <p class="mt-4 text-justify">Witness the Journey of Growth - Delve into ElevateSphere's remarkable progress and evolution as a company, from its inception to its current achievements.</p>
+                </div>
+                <div class="col colthree p-5" style="text-align: center; background-color: #FFD56F;">
+                    <div><img src="/diamond.png" width="100px;"></div><br>
+                    <b>ElevateXclusives</b>
+                    <p class="mt-4 text-justify"> Indulge in Premium Perks - Immerse yourself in a world of exclusive privileges and benefits tailored for ElevateSphere's valued members.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="test">
+        <div class="container mt-5">
+            <div class="row">
+                <p style="font-size:30px;color:#CECE5A" class="text-center">Testimonials</p>
+            </div>
+            <div class="row">
+                <div class="col col-12" style="text-align: justify; font-style: italic;">
+                    <p>"ElevateSphere's dedication to excellence and continuous improvement is evident in every aspect. Their approach to nurturing talent, fostering inspiration, and providing premium perks is a testament to their commitment to building a brighter future."</p>
+                    <div class="offset-5 mt-5" style="color:#F7F1E5"><img src="/Bill-Gates-2011.jpg" width='100'>
+                    <p>Gill Gates</p>
+                    <p class="pro">Business Magnate</p></div>
+                </div>
+                <div class="col col-12"style="text-align: justify; font-style: italic;">
+                    <p>"ElevateSphere is all about pushing boundaries and embracing growth. It's inspiring to see a company that values both innovation and personal development. Their commitment to fostering creativity and progress is truly commendable."
+                    </p>
+                    <div class="offset-5 mt-5"style="color:#F7F1E5"><img src="/tb.jpg" width='100'>
+                    <p>Tanmay Bhat</p>
+                    <p class="pro">Indian YouTuber</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recents">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="text-align: center; font-size: 30px;">
+                    <p class="recentsnews">Recent News</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style=" border:1px solid black;margin:10px; padding: 15px;">
+                    <div><div class="newsimg"><img src="/1.jpg" width="150px">
+                        <p class="text-danger" style="font-weight: bolder;">Innovative Mentorship</p></div>
+                        <img src="/calendar.png" width="20cm" class="calender">Aug 10,2023
+                        <p> ElevateSphere introduces groundbreaking mentorship initiative.</p>
+                        <a href="" class="read">Read More...</a>
+                    </div>
+                </div>
+                <div class="col"style=" border:1px solid black;margin:10px;padding: 15px;">
+                    <div><div class="newsimg"><img src="/2.jpg" width="150px">
+                        <p class="text-danger" style="font-weight: bolder;">Q2 Record Growth</p></div>
+                        <img src="/calendar.png" width="20cm" class="calender">Aug 10,2023
+                        <p>ElevateSphere achieves unparalleled Q2 growth</p>
+                        <a href="" class="read">Read More...</a>
+                    </div>
+                </div>
+                <div class="col" style=" border:1px solid black;margin:10px;padding: 15px;">
+                    <div><div class="newsimg"><img src="/3.jpg" width="150px">
+                        <p class="text-danger" style="font-weight: bolder;">Exclusive Event Access</p></div>
+                        <img src="/calendar.png" width="20cm" class="calender">Aug 10,2023
+                        <p>ElevateSphere members gain premium event privileges.</p>
+                        <a href="" class="read">Read More...</a>
+                    </div>
+                </div>
+                <div class="col" style=" border:1px solid black; margin:10px;padding: 15px;">
+                    <div><div class="newsimg"><img src="/4.jpg" width="150px">
+                        <p class="text-danger" style="font-weight: bolder;">Empowering Education</p></div>
+                        <img src="/calendar.png" width="20cm" class="calender">Aug 10,2023
+                        <p> ElevateSphere Foundation supports local education with grants.</p>
+                        <a href="" class="read">Read More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lastme">
+    <div class="last ps-5 pb-0 pt-1">
+        <div class="row ">
+            <div class="col p-2">
+                <p class="first">Join the ElevateSphere Community</p>
+                <p>ElevateSphere welcomes you to a dynamic community committed to growth, inspiration, and success.</p>
+                <p>Unlock exclusive content, network with peers, and connect with kindred spirits who share your ambitions-start your elevated journey now!</p>
+            </div>
+            <div class="col p-2" >
+                <p class="first">Lastest Publications</p>
+                <div>Discover our newest publications, insights, and updates that capture ElevateSphere's journey of growth and innovation.</div>
+                <div>Delve into ElevateSphere's latest publications and insights, reflecting our journey of growth and innovation.</div>
+            </div>
+            <div class="col p-2">
+                <p class="first">Company Address</p>
+                <div class="lower">
+                <div>Vinayaka G,Inc.</div>
+                <div>ElevateSphere Headquarters</div>
+                <div>Karnataka,INDIA-583282</div>
+                <div>P:8088442171</div>
+                </div>
+            </div>
+            <div class="col p-2">
+                <p class="first">Frontend Showcase by...</p>
+                <div class="lower">
+                <div>Vinayaka G</div>
+                <div>Karnataka,INDIA-583282</div>
+                <div>Ph No:8088442171</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer" height="1px" style="color:aliceblue; background-color: #200234;">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-2  ms-md-n5 col-sm-12" style="margin-left:-10px">copyright@2023companyname</div>
+                <div class="col col-md-2 ps-3 offset-md-8 col-sm-12">
+                <a href="https://mail.google.com" class="ic"><img src="./mail.png" width="26.5px"></a>
+                <a href="https://linkedin.com" class="ic"><img src="./icons8-linkedin-48.png" width="35px"></a>
+                <a href="https://twitter.com" class="ic"><img src="./icons8-twitter-48.png" width="35px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="otherProjects">
+    <h3 class="text-center">Other Projects</h3>
+    <nav class="othernav">
+        <li><a href="./weather.html" target="./main">Weather</a></li>
+        <li><a href="./todo.html" target="./main">Todo List</a></li>
+        <li><a href="./Clockprogram.html" target="./main">Clock</a></li>
+        <li><a href="./StopWatch.html" target="./main">StopTimer</a></li>
+        <li><a href="./RPS.html" target="./main">RPS Game</a></li>
+    </nav>
+</div>    
+</body>
+</html>
